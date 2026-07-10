@@ -48,7 +48,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Efficient Text-to-Audio generative model via Pruning</h1>
+          <h1 class="title is-1 publication-title">Efficient Text-to-Audio generation via Pruning</h1>
           <div class="is-size-5 publication-authors">
            <span class="author-block">
               <p>Arshdeep Singh<sup>1</sup>, Yi Yuan<sup>2</sup>, 
@@ -81,8 +81,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Diffusion-based text-to-audio generative models such as AudioLDM achieve high perceptual quality and strong semantic consistency; however, their practical deployment is hindered by the substantial computational cost of the U-Net denoising backbone. In this work, we investigate model pruning as an effective approach to improve the inference efficiency of AudioLDM, a U-Net based text-conditioned audio latent diffusion model. We analyse parameter redundancy across U-Net convolutional blocks and evaluate a filter-pruning strategy. Pruning is guided by norm-based criteria and followed by lightweight finetuning to mitigate performance degradation. Experimental results demonstrate that up to 83\% of the parameters and 39\% of the multiply–accumulate (MAC) operations of U-Net can be removed while maintaining, and in some cases improving, generation quality compared to the baseline unpruned network. We find that pruning affects AudioLDM’s ability to generate certain sound events including safety-critical sounds such as gunshots, sirens, and explosions, as well as mechanical sounds such as drills and sewing machines, and other sounds such as sprays and tick-tocks, which are mostly recovered  by lightweight finetuning of the pruned network.
-            The code is available at <a href="https://github.com/Arshdeep-Singh-Boparai/PruningAudioLDM">GitHub Link</a>.
+Diffusion-based text-to-audio generative models such as AudioLDM achieve high perceptual quality and strong semantic consistency; however, their practical deployment is hindered by the substantial computational cost of the U-Net denoising backbone. In this work, we apply model pruning to improve the computational efficiency of AudioLDM, a U-Net based text-conditioned audio latent diffusion model. We analyse parameter redundancy across U-Net convolutional blocks and evaluate a filter-pruning strategy. Pruning is guided by norm-based criteria and followed by lightweight finetuning to mitigate performance degradation. Experimental results demonstrate that up to 83\% of the parameters and 39\% of the multiply–accumulate operations of U-Net has been reduced while maintaining, and in some cases improving, generation quality compared to the baseline unpruned network. We find that pruning affects AudioLDM’s ability to generate certain sound events including safety-critical sounds such as gunshots, sirens, and explosions, as well as mechanical sounds such as drills and sewing machines, and other sounds such as sprays and tick-tocks, which are mostly recovered  by lightweight finetuning of the pruned model.            The code is available at <a href="https://github.com/Arshdeep-Singh-Boparai/PruningAudioLDM">GitHub Link</a>.
           </p>
         </div>
       </div>
@@ -187,10 +186,10 @@
           </tr>
           <tr>
             <td style="text-align: justify; font-size: 0.9em;">A man speaking while water is spraying into a sink and draining</td>
-            <td><audio controls style="width: 100%;" src="./static/audio/baseline/unpruned/YYLVvS3s9dFKw.wav"></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/baseline/finetuned/YYLVvS3s9dFKw.wav"></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/l1_p1/pruned/val_l1_pruned_infer_03-23-18:22_cfg_scale_3.5_ddim_200_n_cand_3/YYLVvS3s9dFKw.wav"></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/l1_p1/finetuned/val_99999/YYLVvS3s9dFKw.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/baseline/unpruned/YLVvS3s9dFKw.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/baseline/finetuned/YLVvS3s9dFKw.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/l1_p1/pruned/val_l1_pruned_infer_03-23-18:22_cfg_scale_3.5_ddim_200_n_cand_3/YLVvS3s9dFKw.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/l1_p1/finetuned/val_99999/YLVvS3s9dFKw.wav"></audio></td>
           </tr>
           <tr>
             <td style="text-align: justify; font-size: 0.9em;">Emergency sirens wailing as a vehicle accelerates in the distance</td>
@@ -253,11 +252,11 @@
 
           </tr>
             <tr>
-            <td style="text-align: justify; font-size: 0.9em;"> A person is snoring</td>
-            <td><audio controls style="width: 100%;" src="./static/audio/baseline/unpruned/YUjje3lSabsg.wav"></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/baseline/finetuned/YUjje3lSabsg.wav"></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/l1_p1/pruned/val_l1_pruned_infer_03-23-18:22_cfg_scale_3.5_ddim_200_n_cand_3/YUjje3lSabsg.wav"></audio></td>
-            <td><audio controls style="width: 100%;" src="./static/audio/l1_p1/finetuned/val_99999/YUjje3lSabsg.wav"></audio></td>
+            <td style="text-align: justify; font-size: 0.9em;">A woman and a child speaking</td>
+            <td><audio controls style="width: 100%;" src="./static/audio/baseline/unpruned/YCBwXKOpJY_o.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/baseline/finetuned/YCBwXKOpJY_o.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/l1_p1/pruned/val_l1_pruned_infer_03-23-18:22_cfg_scale_3.5_ddim_200_n_cand_3/YCBwXKOpJY_o.wav"></audio></td>
+            <td><audio controls style="width: 100%;" src="./static/audio/l1_p1/finetuned/val_99999/YCBwXKOpJY_o.wav"></audio></td>
           </tr>
           <tr>
             <td style="text-align: justify; font-size: 0.9em;">Leaves rustling in the wind with dogs barking and birds chirping</td>
