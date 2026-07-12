@@ -48,27 +48,87 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Efficient Text-to-Audio generation via Pruning</h1>
-          <div class="is-size-5 publication-authors">
-           <span class="author-block">
-              <p>Arshdeep Singh<sup>1</sup>, Yi Yuan<sup>2</sup>, 
-                Yun Chen<sup>1</sup>, 
-                Wenwu Wang<sup>2</sup>,  
-                Mark D. Plumbley<sup>1,*</sup></p>
-            </span>
 
-            <div class="is-size-5 publication-authors">
-              <p><sup>1</sup>King's College London, United Kingdom</p>
-              <p><sup>2</sup>Centre for Vision, Speech and Signal Processing, University of Surrey, United Kingdom</p>
-            </div>
+          <h1 class="title is-1 publication-title">
+            Efficient Text-to-Audio Generation via Pruning
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Arshdeep Singh<sup>1,*</sup>,
+            </span>
+            <span class="author-block">
+              Yi Yuan<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Yun Chen<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Wenwu Wang<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Mark D. Plumbley<sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors" style="margin-top:10px;">
+            <span class="author-block">
+              <sup>1</sup>King's College London, United Kingdom
+            </span><br>
+            <span class="author-block">
+              <sup>2</sup>Centre for Vision, Speech and Signal Processing, University of Surrey, United Kingdom
+            </span><br>
 
           </div>
+
+          <!-- Links -->
+          <div class="publication-links" style="margin-top:25px;">
+
+            <!-- Paper -->
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/XXXX.XXXXX"
+                 target="_blank"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>Paper on ArXiv</span>
+              </a>
+            </span>
+
+            <!-- GitHub -->
+            <span class="link-block">
+              <a href="https://github.com/Arshdeep-Singh-Boparai/PruningAudioLDM.git"
+                 target="_blank"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code on GitHub</span>
+              </a>
+            </span>
+
+            <!-- Optional Hugging Face -->
+            <!--
+            <span class="link-block">
+              <a href="https://huggingface.co/spaces/..."
+                 target="_blank"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <img src="static/images/hf-logo.svg" style="height:1em;">
+                </span>
+                <span>Hugging Face Space</span>
+              </a>
+            </span>
+            -->
+
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 
 
@@ -96,7 +156,7 @@ Diffusion-based text-to-audio generative models such as AudioLDM achieve high pe
 
 <section class="section">
   <div class="container is-max-desktop has-text-centered">
-    <h2 class="title is-3">AudioLDM Framework & U-Net based LDM Resources Analysis</h2>
+    <h2 class="title is-3">AudioLDM Framework & U-Net (LDM) Resources Analysis</h2>
 
     <div style="display:flex; justify-content:center; gap:20px;">
 
@@ -118,7 +178,7 @@ Diffusion-based text-to-audio generative models such as AudioLDM achieve high pe
 
     <!-- Image 1 -->
     <figure>
-      <img src="./static/image/pruning_framework.jpg" alt="Framework Overview" style="max-width: 100%;">
+      <img src="./static/image/pruning_framework1.png" alt="Framework Overview" style="max-width: 100%;">
       <figcaption style="margin-top: 0.5em;"></figcaption>
     </figure>
 </section>
@@ -129,10 +189,10 @@ Diffusion-based text-to-audio generative models such as AudioLDM achieve high pe
 
     <!-- First row -->
     <div style="display:flex; justify-content:center; gap:20px; margin-bottom:20px;">
-      <img src="./static/image/delta_figure.png"
+      <img src="./static/image/delta_figure1.png"
            style="width:45%;">
 
-      <img src="./static/image/scatter_plot.png"
+      <img src="./static/image/scatter_plot1.png"
            style="width:45%;">
     </div>
 
@@ -141,7 +201,7 @@ Diffusion-based text-to-audio generative models such as AudioLDM achieve high pe
       <img src="./static/image/Table_events.png"
            style="width:45%;">
 
-      <img src="./static/image/bar_plot.png"
+      <img src="./static/image/bar_plot1.png"
            style="width:45%;">
     </div>
 
@@ -277,8 +337,30 @@ Diffusion-based text-to-audio generative models such as AudioLDM achieve high pe
 
 
 
+<section class="section" id="acknowledgments">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">Acknowledgments</h2>
 
+        <div class="content has-text-justified">
+          <p>
+            This work was supported by the 
+            <b>Engineering and Physical Sciences Research Council (EPSRC)</b> 
+            under Grant <b>EP/Y028805/1</b>.
+          </p>
 
+          <p>
+            For the purpose of Open Access, the authors have applied a 
+            <b>Creative Commons Attribution (CC BY)</b> licence to any 
+            Author Accepted Manuscript arising from this submission.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
